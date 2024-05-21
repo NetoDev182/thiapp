@@ -19,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         auth = FirebaseAuth.getInstance();
 
+        AppAppCenter.start(getApplication(), "{"a202aa69-660a-4342-84cd-444a6f0ad754"}",
+                  Analytics.class, Crashes.class);
+
+
         FirebaseUser user = auth.getCurrentUser();
 
         if(user != null){
