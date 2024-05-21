@@ -7,6 +7,9 @@ import android.view.View;
 import com.microsoft.appcenter.AppCenter;
 import com.microsoft.appcenter.analytics.Analytics;
 import com.microsoft.appcenter.crashes.Crashes;
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -19,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         auth = FirebaseAuth.getInstance();
 
-        AppAppCenter.start(getApplication(), "{"e302b2f7-f7c1-4927-8446-80645dcbb353"}",
+        AppAppCenter.start(getApplication(), "{"08001fbb-da27-4756-be5e-0ca13735a8d2"}",
                   Analytics.class, Crashes.class);
 
 
